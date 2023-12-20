@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #eed872;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.logo_note {
+  width: 150px;
+  height: 140px;
+  margin-bottom: -30px;
+  padding: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list {
+  height: fit-content;
+  width: 20vw;
+  padding: 15px;
+  font-size: 14pt;
+  background-color: rgb(240, 202, 33);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.elements {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+.update:hover {
+  background-color: rgba(0, 195, 255, 0.782);
+  fill: rgba(0, 195, 255, 0.782);
+  cursor: pointer;
+}
+.delete :hover {
+  cursor: pointer;
+  fill: red;
+}
+.add {
+  cursor: pointer;
+  fill: green;
+}
+.input {
+  width: 22vw;
+  height: fit-content;
+  border-radius: 25px;
+  text-transform: capitalize;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(240, 202, 33);
+  margin-bottom: 10px;
+}
+.itemName {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 18pt;
+  width: fit-content;
+}
+.row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 20vw;
+  height: fit-content;
+  border-bottom: 2px solid whitesmoke;
 }
